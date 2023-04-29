@@ -8,7 +8,6 @@ public class StatsServiceTest {
     public void shouldFindAmountSales() {
         StatsService service = new StatsService();
         int[] sale = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-
         int expectedAmount = 180;
         int actualAmount = service.salesAmount(sale);
         Assertions.assertEquals(expectedAmount, actualAmount);
